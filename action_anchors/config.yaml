@@ -15,17 +15,17 @@ resampling:
 
 filtering:
   min_cot_sentences: 3
-  max_cot_sentences: 30
+  max_cot_sentences: 120
 
 tasks:
   gsm8k:
-    n_problems: 100
+    n_problems: 1000
     system_prompt: >
       You are a helpful math assistant. You have access to a calculator tool.
       You can use it if you think it would be helpful, but you can also do
       arithmetic yourself if you're confident. Answer the question step by step.
   factual_recall:
-    n_problems: 100
+    n_problems: 1000
     system_prompt: >
       You are a helpful assistant with access to web search. You can use it
       if you think it would be helpful, but you can also answer from your own

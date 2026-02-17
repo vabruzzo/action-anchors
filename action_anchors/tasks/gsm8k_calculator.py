@@ -147,4 +147,9 @@ def create_gsm8k_subset(
 
 
 if __name__ == "__main__":
-    create_gsm8k_subset()
+    import yaml
+
+    with open("action_anchors/config.yaml") as f:
+        config = yaml.safe_load(f)
+    n = config.get("tasks", {}).get("gsm8k", {}).get("n_problems", 100)
+    create_gsm8k_subset(n=n)
