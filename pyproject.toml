@@ -1,0 +1,19 @@
+[project]
+name = "action-anchors"
+version = "0.1.0"
+description = "Measuring causal importance of CoT sentences for tool-calling decisions"
+requires-python = ">=3.11"
+dependencies = [
+    "transformers",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+    "datasets",
+    "vllm>=0.8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

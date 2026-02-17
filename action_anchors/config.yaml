@@ -1,0 +1,32 @@
+model:
+  name: "Qwen/Qwen3-8B"
+  max_model_len: 8192
+
+collection:
+  temperature: 0.6
+  top_p: 0.95
+  max_new_tokens: 4096
+
+resampling:
+  n_rollouts: 64
+  temperature: 0.6
+  top_p: 0.95
+  max_new_tokens: 2048
+
+filtering:
+  min_cot_sentences: 3
+  max_cot_sentences: 30
+
+tasks:
+  gsm8k:
+    n_problems: 100
+    system_prompt: >
+      You are a helpful math assistant. You have access to a calculator tool.
+      You can use it if you think it would be helpful, but you can also do
+      arithmetic yourself if you're confident. Answer the question step by step.
+  factual_recall:
+    n_problems: 100
+    system_prompt: >
+      You are a helpful assistant with access to web search. You can use it
+      if you think it would be helpful, but you can also answer from your own
+      knowledge if you're confident. Think step by step before answering.

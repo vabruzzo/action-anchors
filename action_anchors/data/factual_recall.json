@@ -1,0 +1,802 @@
+[
+    {
+        "id": "fact_001",
+        "question": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Paris",
+        "category": "easy"
+    },
+    {
+        "id": "fact_002",
+        "question": "Who wrote the play Romeo and Juliet?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "William Shakespeare",
+        "category": "easy"
+    },
+    {
+        "id": "fact_003",
+        "question": "What is the chemical symbol for gold?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Au",
+        "category": "easy"
+    },
+    {
+        "id": "fact_004",
+        "question": "What year did World War II end?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "1945",
+        "category": "easy"
+    },
+    {
+        "id": "fact_005",
+        "question": "What is the largest planet in our solar system?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Jupiter",
+        "category": "easy"
+    },
+    {
+        "id": "fact_006",
+        "question": "Who painted the Mona Lisa?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Leonardo da Vinci",
+        "category": "easy"
+    },
+    {
+        "id": "fact_007",
+        "question": "What is the boiling point of water in Celsius?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "100 degrees Celsius",
+        "category": "easy"
+    },
+    {
+        "id": "fact_008",
+        "question": "What is the speed of light in a vacuum?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "approximately 299,792 kilometers per second",
+        "category": "easy"
+    },
+    {
+        "id": "fact_009",
+        "question": "Who was the first person to walk on the Moon?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Neil Armstrong",
+        "category": "easy"
+    },
+    {
+        "id": "fact_010",
+        "question": "What is the capital of Japan?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Tokyo",
+        "category": "easy"
+    },
+    {
+        "id": "fact_011",
+        "question": "How many continents are there on Earth?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "7",
+        "category": "easy"
+    },
+    {
+        "id": "fact_012",
+        "question": "Who developed the theory of general relativity?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Albert Einstein",
+        "category": "easy"
+    },
+    {
+        "id": "fact_013",
+        "question": "What is the longest river in the world?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "The Nile (approximately 6,650 km)",
+        "category": "easy"
+    },
+    {
+        "id": "fact_014",
+        "question": "What element does 'O' represent on the periodic table?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Oxygen",
+        "category": "easy"
+    },
+    {
+        "id": "fact_015",
+        "question": "In what year did the Titanic sink?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "1912",
+        "category": "easy"
+    },
+    {
+        "id": "fact_016",
+        "question": "What is the square root of 144?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "12",
+        "category": "easy"
+    },
+    {
+        "id": "fact_017",
+        "question": "What language is primarily spoken in Brazil?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Portuguese",
+        "category": "easy"
+    },
+    {
+        "id": "fact_018",
+        "question": "Who is known as the father of computer science?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Alan Turing",
+        "category": "easy"
+    },
+    {
+        "id": "fact_019",
+        "question": "What is the atomic number of carbon?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "6",
+        "category": "easy"
+    },
+    {
+        "id": "fact_020",
+        "question": "What is the currency of the United Kingdom?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Pound sterling (GBP)",
+        "category": "easy"
+    },
+    {
+        "id": "fact_021",
+        "question": "Who wrote 'A Brief History of Time'?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Stephen Hawking",
+        "category": "easy"
+    },
+    {
+        "id": "fact_022",
+        "question": "What is the tallest mountain in the world?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Mount Everest (8,849 meters)",
+        "category": "easy"
+    },
+    {
+        "id": "fact_023",
+        "question": "What does DNA stand for?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "Deoxyribonucleic acid",
+        "category": "easy"
+    },
+    {
+        "id": "fact_024",
+        "question": "What year was the Declaration of Independence signed?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "1776",
+        "category": "easy"
+    },
+    {
+        "id": "fact_025",
+        "question": "What is the formula for water?",
+        "difficulty": "easy",
+        "expected_tool_use": false,
+        "ground_truth": "H2O",
+        "category": "easy"
+    },
+    {
+        "id": "fact_026",
+        "question": "How many registered voters were there in Bhutan's 2023 National Assembly election?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 484,000 registered voters",
+        "category": "hard"
+    },
+    {
+        "id": "fact_027",
+        "question": "What is the exact elevation in meters of the highest point in Luxembourg?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Kneiff at 560 meters",
+        "category": "hard"
+    },
+    {
+        "id": "fact_028",
+        "question": "How many islands make up the Maldives?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 1,192 coral islands",
+        "category": "hard"
+    },
+    {
+        "id": "fact_029",
+        "question": "What is the total length of the Trans-Siberian Railway in kilometers?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 9,289 kilometers",
+        "category": "hard"
+    },
+    {
+        "id": "fact_030",
+        "question": "How many known species of ants exist worldwide?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "over 22,000 described species",
+        "category": "hard"
+    },
+    {
+        "id": "fact_031",
+        "question": "What is the exact year the University of Bologna was founded?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "1088",
+        "category": "hard"
+    },
+    {
+        "id": "fact_032",
+        "question": "How many volumes are in the Library of Congress as of 2024?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 17 million volumes",
+        "category": "hard"
+    },
+    {
+        "id": "fact_033",
+        "question": "What is the total area of Lake Baikal in square kilometers?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 31,722 square kilometers",
+        "category": "hard"
+    },
+    {
+        "id": "fact_034",
+        "question": "How many UNESCO World Heritage Sites does Italy have?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "59 as of 2024",
+        "category": "hard"
+    },
+    {
+        "id": "fact_035",
+        "question": "What is the wingspan in meters of a Boeing 747-8?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "68.4 meters",
+        "category": "hard"
+    },
+    {
+        "id": "fact_036",
+        "question": "How many paintings did Johannes Vermeer produce in his lifetime?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 34-36 attributed works",
+        "category": "hard"
+    },
+    {
+        "id": "fact_037",
+        "question": "What is the deepest point of the Mariana Trench in meters?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 10,935 meters (Challenger Deep)",
+        "category": "hard"
+    },
+    {
+        "id": "fact_038",
+        "question": "How many steps are there in the Eiffel Tower from ground to top?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "1,665 steps to the top",
+        "category": "hard"
+    },
+    {
+        "id": "fact_039",
+        "question": "What is the total number of subway stations in the Tokyo Metro system?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "180 stations (Tokyo Metro only, not including Toei)",
+        "category": "hard"
+    },
+    {
+        "id": "fact_040",
+        "question": "What is the exact melting point of titanium in degrees Celsius?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "1,668 degrees Celsius",
+        "category": "hard"
+    },
+    {
+        "id": "fact_041",
+        "question": "How many bones does a domestic cat have?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 230 bones",
+        "category": "hard"
+    },
+    {
+        "id": "fact_042",
+        "question": "What is the total number of municipalities in Switzerland?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 2,136 as of 2024",
+        "category": "hard"
+    },
+    {
+        "id": "fact_043",
+        "question": "How many verses are in the Quran?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "6,236 verses (ayahs)",
+        "category": "hard"
+    },
+    {
+        "id": "fact_044",
+        "question": "What is the exact orbital period of Saturn around the Sun in Earth years?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 29.46 Earth years",
+        "category": "hard"
+    },
+    {
+        "id": "fact_045",
+        "question": "How many locks are in the Panama Canal?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "12 locks (in 3 sets of 2 lanes each, with the newer Neopanamax locks)",
+        "category": "hard"
+    },
+    {
+        "id": "fact_046",
+        "question": "What is the total number of kanji characters in the Joyo Kanji list in Japan?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "2,136 characters",
+        "category": "hard"
+    },
+    {
+        "id": "fact_047",
+        "question": "How many official languages does South Africa have?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "11 official languages",
+        "category": "hard"
+    },
+    {
+        "id": "fact_048",
+        "question": "What is the average depth of the Mediterranean Sea in meters?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 1,500 meters",
+        "category": "hard"
+    },
+    {
+        "id": "fact_049",
+        "question": "How many symphonies did Gustav Mahler compose?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "9 completed symphonies (10th left unfinished)",
+        "category": "hard"
+    },
+    {
+        "id": "fact_050",
+        "question": "What is the total length of the Great Wall of China in kilometers according to the most recent survey?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 21,196 kilometers (including all branches and sections)",
+        "category": "hard"
+    },
+    {
+        "id": "fact_051",
+        "question": "What is the current population of Iceland?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 383,000",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_052",
+        "question": "What is the GDP of New Zealand?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately $250 billion USD",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_053",
+        "question": "Who is the current Secretary-General of the United Nations?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "Antonio Guterres",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_054",
+        "question": "What is the population of Liechtenstein?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 39,000",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_055",
+        "question": "What is the current world record for the men's 100m sprint?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "9.58 seconds by Usain Bolt (2009)",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_056",
+        "question": "How many countries are currently in the European Union?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "27 member states",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_057",
+        "question": "What is the current inflation rate in the United States?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 2.5-3% (varies by month)",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_058",
+        "question": "Who is the current Prime Minister of Canada?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "Mark Carney (as of 2025)",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_059",
+        "question": "What is the population of Tokyo metropolitan area?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 37 million in the greater metropolitan area",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_060",
+        "question": "How many billionaires are there in the world according to Forbes?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 2,780 (2024 list)",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_061",
+        "question": "What is the current life expectancy in Japan?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 84 years",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_062",
+        "question": "What is the current exchange rate of 1 US dollar to Japanese yen?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 150-155 yen per dollar (fluctuates)",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_063",
+        "question": "How many nuclear power plants are operational in France?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "56 operational reactors at 18 sites",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_064",
+        "question": "What percentage of the world's population lives in Asia?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 59%",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_065",
+        "question": "What is the current unemployment rate in Germany?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 5.7-6%",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_066",
+        "question": "How many active volcanoes are there in Indonesia?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 130 active volcanoes",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_067",
+        "question": "What is the total length of the Amazon River?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 6,400 kilometers",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_068",
+        "question": "Who is the richest person in the world right now?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "Elon Musk (as of late 2024/early 2025)",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_069",
+        "question": "What is the current global average temperature anomaly compared to pre-industrial levels?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 1.2-1.5 degrees Celsius above pre-industrial levels",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_070",
+        "question": "How many satellites are currently orbiting Earth?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "over 10,000 active satellites (as of 2024)",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_071",
+        "question": "What is the current population of Nigeria?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 230 million",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_072",
+        "question": "How many electric vehicles were sold worldwide in 2024?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 17 million",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_073",
+        "question": "What is the total number of languages spoken in Papua New Guinea?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "over 840 languages",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_074",
+        "question": "What percentage of Earth's surface is covered by oceans?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 71%",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_075",
+        "question": "How many episodes of The Simpsons have been produced?",
+        "difficulty": "medium",
+        "expected_tool_use": true,
+        "ground_truth": "over 770 episodes",
+        "category": "borderline"
+    },
+    {
+        "id": "fact_076",
+        "question": "Who won the 2025 Super Bowl?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Philadelphia Eagles (Super Bowl LIX, February 2025)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_077",
+        "question": "What was the global box office gross for the highest-grossing film of 2025?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "varies depending on time of query; check current box office data",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_078",
+        "question": "Who won the 2025 Australian Open men's singles title?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Jannik Sinner",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_079",
+        "question": "What is the current price of Bitcoin in US dollars?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "fluctuates; approximately $90,000-$100,000 range in early 2025",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_080",
+        "question": "Who won the 2024 US Presidential Election?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Donald Trump",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_081",
+        "question": "What was the latest version of Python released in 2025?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Python 3.13.x (check for latest patch version)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_082",
+        "question": "Which country hosted the 2025 FIFA Club World Cup?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "United States (summer 2025)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_083",
+        "question": "What were the results of the 2024 European Parliament elections?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "EPP remained the largest group; shift toward right-wing parties",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_084",
+        "question": "Who won the 2024 Nobel Prize in Physics?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "John Hopfield and Geoffrey Hinton for foundational discoveries in machine learning",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_085",
+        "question": "What is the current federal funds rate set by the US Federal Reserve?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 4.25-4.5% (as of early 2025)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_086",
+        "question": "Who won the 2024 Ballon d'Or award?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Rodri (Rodrigo Hernandez, Manchester City)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_087",
+        "question": "What was the outcome of the 2024 UK general election?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Labour Party won a landslide victory; Keir Starmer became Prime Minister",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_088",
+        "question": "Who won the 2025 Australian Open women's singles title?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Madison Keys",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_089",
+        "question": "What new country joined BRICS in 2024?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Egypt, Ethiopia, Iran, Saudi Arabia, and UAE were invited; most joined in January 2024",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_090",
+        "question": "What was the closing value of the S&P 500 at the end of 2024?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 5,881 (December 31, 2024)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_091",
+        "question": "Who is the current CEO of OpenAI?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Sam Altman",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_092",
+        "question": "Which spacecraft successfully landed on the Moon's south pole region in 2023?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "India's Chandrayaan-3 (Vikram lander)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_093",
+        "question": "What major social media platform rebranded to 'X' in 2023?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Twitter rebranded to X",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_094",
+        "question": "Who won the 2024 Copa America?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Argentina",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_095",
+        "question": "What was the date of the total solar eclipse visible across North America in 2024?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "April 8, 2024",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_096",
+        "question": "What AI model did Google DeepMind release in late 2024?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Gemini 2.0",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_097",
+        "question": "Who became the new NATO Secretary General in 2024?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Mark Rutte (took office October 2024)",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_098",
+        "question": "What was the world population estimate as of January 2025?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "approximately 8.1 billion",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_099",
+        "question": "Which team won the 2024 NBA Championship?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Boston Celtics",
+        "category": "temporal"
+    },
+    {
+        "id": "fact_100",
+        "question": "Who won the 2024 Nobel Prize in Literature?",
+        "difficulty": "hard",
+        "expected_tool_use": true,
+        "ground_truth": "Han Kang",
+        "category": "temporal"
+    }
+]

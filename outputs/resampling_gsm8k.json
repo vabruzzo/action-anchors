@@ -1,0 +1,806 @@
+[
+  {
+    "example_id": "gsm8k_022",
+    "question": "Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2 customers buy 2 DVDs each.  His last 3 customers don't buy any DVDs. How many DVDs did Billy sell on Tuesday?",
+    "first_tool_call": {
+      "name": "calculator",
+      "arguments": {
+        "expression": "3*1 + 2*2 + 3*0"
+      }
+    },
+    "n_sentences": 25,
+    "first_commitment_point": 21,
+    "baseline_agreement": 0.578125,
+    "final_agreement": 1.0,
+    "importance_profile": [
+      {
+        "sentence_idx": 0,
+        "sentence_text": "Okay, let me try to figure out how many DVDs Billy sold on Tuesday.",
+        "agreement": 0.5,
+        "importance": -0.078125,
+        "argument_agreement": 0.109375,
+        "entropy": 1.0
+      },
+      {
+        "sentence_idx": 1,
+        "sentence_text": "So, the problem says he has 8 customers.",
+        "agreement": 0.578125,
+        "importance": 0.078125,
+        "argument_agreement": 0.359375,
+        "entropy": 0.9823166080205501
+      },
+      {
+        "sentence_idx": 2,
+        "sentence_text": "Let me break it down step by step.",
+        "agreement": 0.390625,
+        "importance": -0.1875,
+        "argument_agreement": 0.125,
+        "entropy": 0.9652016987500656
+      },
+      {
+        "sentence_idx": 3,
+        "sentence_text": "First, the first 3 customers each buy one DVD.",
+        "agreement": 0.453125,
+        "importance": 0.0625,
+        "argument_agreement": 0.09375,
+        "entropy": 0.9936507116910404
+      },
+      {
+        "sentence_idx": 4,
+        "sentence_text": "So that's 3 customers times 1 DVD each.",
+        "agreement": 0.6875,
+        "importance": 0.234375,
+        "argument_agreement": 0.453125,
+        "entropy": 0.8960382325345574
+      },
+      {
+        "sentence_idx": 5,
+        "sentence_text": "Let me calculate that: 3 * 1 = 3 DVDs.",
+        "agreement": 0.671875,
+        "importance": -0.015625,
+        "argument_agreement": 0.4375,
+        "entropy": 0.9129992135852473
+      },
+      {
+        "sentence_idx": 6,
+        "sentence_text": "Got that part.",
+        "agreement": 0.765625,
+        "importance": 0.09375,
+        "argument_agreement": 0.640625,
+        "entropy": 0.7855602922535472
+      },
+      {
+        "sentence_idx": 7,
+        "sentence_text": "Next, the next 2 customers buy 2 DVDs each.",
+        "agreement": 0.703125,
+        "importance": -0.0625,
+        "argument_agreement": 0.546875,
+        "entropy": 0.877437311089633
+      },
+      {
+        "sentence_idx": 8,
+        "sentence_text": "So that's 2 customers multiplied by 2 DVDs.",
+        "agreement": 0.796875,
+        "importance": 0.09375,
+        "argument_agreement": 0.59375,
+        "entropy": 0.7281342378690551
+      },
+      {
+        "sentence_idx": 9,
+        "sentence_text": "Let me do that: 2 * 2 = 4 DVDs.",
+        "agreement": 0.78125,
+        "importance": -0.015625,
+        "argument_agreement": 0.609375,
+        "entropy": 0.7578784625383954
+      },
+      {
+        "sentence_idx": 10,
+        "sentence_text": "Adding that to the previous total, so 3 + 4 = 7 DVDs so far.",
+        "agreement": 0.859375,
+        "importance": 0.078125,
+        "argument_agreement": 0.640625,
+        "entropy": 0.5858732928619205
+      },
+      {
+        "sentence_idx": 11,
+        "sentence_text": "Then there are the last 3 customers who don't buy any.",
+        "agreement": 0.765625,
+        "importance": -0.09375,
+        "argument_agreement": 0.546875,
+        "entropy": 0.7855602922535472
+      },
+      {
+        "sentence_idx": 12,
+        "sentence_text": "So those contribute 0 DVDs.",
+        "agreement": 0.78125,
+        "importance": 0.015625,
+        "argument_agreement": 0.484375,
+        "entropy": 0.7578784625383954
+      },
+      {
+        "sentence_idx": 13,
+        "sentence_text": "Wait, let me check if I accounted for all 8 customers.",
+        "agreement": 0.75,
+        "importance": -0.03125,
+        "argument_agreement": 0.5,
+        "entropy": 0.8112781244591328
+      },
+      {
+        "sentence_idx": 14,
+        "sentence_text": "The first 3, then next 2, then last 3. 3 + 2 + 3 equals 8. Yep, that adds up.",
+        "agreement": 0.8125,
+        "importance": 0.0625,
+        "argument_agreement": 0.515625,
+        "entropy": 0.6962122601251458
+      },
+      {
+        "sentence_idx": 15,
+        "sentence_text": "So the total DVDs sold would be the sum of the first two groups.",
+        "agreement": 0.78125,
+        "importance": -0.03125,
+        "argument_agreement": 0.46875,
+        "entropy": 0.7578784625383954
+      },
+      {
+        "sentence_idx": 16,
+        "sentence_text": "So 3 from the first group, 4 from the second, and 0 from the last.",
+        "agreement": 0.796875,
+        "importance": 0.015625,
+        "argument_agreement": 0.453125,
+        "entropy": 0.7281342378690551
+      },
+      {
+        "sentence_idx": 17,
+        "sentence_text": "So total is 3 + 4 + 0 = 7.",
+        "agreement": 0.84375,
+        "importance": 0.046875,
+        "argument_agreement": 0.46875,
+        "entropy": 0.6252624052234231
+      },
+      {
+        "sentence_idx": 18,
+        "sentence_text": "Hmm, but wait, let me make sure I didn't miss anything.",
+        "agreement": 0.65625,
+        "importance": -0.1875,
+        "argument_agreement": 0.453125,
+        "entropy": 0.9283620723948676
+      },
+      {
+        "sentence_idx": 19,
+        "sentence_text": "The problem says his first 3 customers buy one each, next 2 buy two each, and last 3 buy none.",
+        "agreement": 0.734375,
+        "importance": 0.078125,
+        "argument_agreement": 0.59375,
+        "entropy": 0.8351164948421137
+      },
+      {
+        "sentence_idx": 20,
+        "sentence_text": "So yes, adding them up gives 3*1 + 2*2 + 3*0. Which is 3 + 4 + 0 = 7.",
+        "agreement": 0.734375,
+        "importance": 0.0,
+        "argument_agreement": 0.59375,
+        "entropy": 0.8351164948421137
+      },
+      {
+        "sentence_idx": 21,
+        "sentence_text": "I think that's correct.",
+        "agreement": 0.984375,
+        "importance": 0.25,
+        "argument_agreement": 0.25,
+        "entropy": 0.11611507530476972
+      },
+      {
+        "sentence_idx": 22,
+        "sentence_text": "Let me just use the calculator tool to verify the arithmetic.",
+        "agreement": 1.0,
+        "importance": 0.015625,
+        "argument_agreement": 1.0,
+        "entropy": 0.0
+      },
+      {
+        "sentence_idx": 23,
+        "sentence_text": "Let me input 3*1 + 2*2. That should be 3 + 4 = 7. Yep, that's right.",
+        "agreement": 1.0,
+        "importance": 0.0,
+        "argument_agreement": 1.0,
+        "entropy": 0.0
+      },
+      {
+        "sentence_idx": 24,
+        "sentence_text": "So the total DVDs sold is 7.",
+        "agreement": 1.0,
+        "importance": 0.0,
+        "argument_agreement": 1.0,
+        "entropy": 0.0
+      }
+    ],
+    "rollout_summary": [
+      {
+        "sentence_idx": -1,
+        "n_rollouts": 64,
+        "n_tool_calls": 37,
+        "n_same_tool": 37
+      },
+      {
+        "sentence_idx": 0,
+        "n_rollouts": 64,
+        "n_tool_calls": 32,
+        "n_same_tool": 32
+      },
+      {
+        "sentence_idx": 1,
+        "n_rollouts": 64,
+        "n_tool_calls": 37,
+        "n_same_tool": 37
+      },
+      {
+        "sentence_idx": 2,
+        "n_rollouts": 64,
+        "n_tool_calls": 25,
+        "n_same_tool": 25
+      },
+      {
+        "sentence_idx": 3,
+        "n_rollouts": 64,
+        "n_tool_calls": 29,
+        "n_same_tool": 29
+      },
+      {
+        "sentence_idx": 4,
+        "n_rollouts": 64,
+        "n_tool_calls": 44,
+        "n_same_tool": 44
+      },
+      {
+        "sentence_idx": 5,
+        "n_rollouts": 64,
+        "n_tool_calls": 43,
+        "n_same_tool": 43
+      },
+      {
+        "sentence_idx": 6,
+        "n_rollouts": 64,
+        "n_tool_calls": 49,
+        "n_same_tool": 49
+      },
+      {
+        "sentence_idx": 7,
+        "n_rollouts": 64,
+        "n_tool_calls": 45,
+        "n_same_tool": 45
+      },
+      {
+        "sentence_idx": 8,
+        "n_rollouts": 64,
+        "n_tool_calls": 51,
+        "n_same_tool": 51
+      },
+      {
+        "sentence_idx": 9,
+        "n_rollouts": 64,
+        "n_tool_calls": 50,
+        "n_same_tool": 50
+      },
+      {
+        "sentence_idx": 10,
+        "n_rollouts": 64,
+        "n_tool_calls": 55,
+        "n_same_tool": 55
+      },
+      {
+        "sentence_idx": 11,
+        "n_rollouts": 64,
+        "n_tool_calls": 49,
+        "n_same_tool": 49
+      },
+      {
+        "sentence_idx": 12,
+        "n_rollouts": 64,
+        "n_tool_calls": 50,
+        "n_same_tool": 50
+      },
+      {
+        "sentence_idx": 13,
+        "n_rollouts": 64,
+        "n_tool_calls": 48,
+        "n_same_tool": 48
+      },
+      {
+        "sentence_idx": 14,
+        "n_rollouts": 64,
+        "n_tool_calls": 52,
+        "n_same_tool": 52
+      },
+      {
+        "sentence_idx": 15,
+        "n_rollouts": 64,
+        "n_tool_calls": 50,
+        "n_same_tool": 50
+      },
+      {
+        "sentence_idx": 16,
+        "n_rollouts": 64,
+        "n_tool_calls": 51,
+        "n_same_tool": 51
+      },
+      {
+        "sentence_idx": 17,
+        "n_rollouts": 64,
+        "n_tool_calls": 54,
+        "n_same_tool": 54
+      },
+      {
+        "sentence_idx": 18,
+        "n_rollouts": 64,
+        "n_tool_calls": 42,
+        "n_same_tool": 42
+      },
+      {
+        "sentence_idx": 19,
+        "n_rollouts": 64,
+        "n_tool_calls": 47,
+        "n_same_tool": 47
+      },
+      {
+        "sentence_idx": 20,
+        "n_rollouts": 64,
+        "n_tool_calls": 47,
+        "n_same_tool": 47
+      },
+      {
+        "sentence_idx": 21,
+        "n_rollouts": 64,
+        "n_tool_calls": 63,
+        "n_same_tool": 63
+      },
+      {
+        "sentence_idx": 22,
+        "n_rollouts": 64,
+        "n_tool_calls": 64,
+        "n_same_tool": 64
+      },
+      {
+        "sentence_idx": 23,
+        "n_rollouts": 64,
+        "n_tool_calls": 64,
+        "n_same_tool": 64
+      },
+      {
+        "sentence_idx": 24,
+        "n_rollouts": 64,
+        "n_tool_calls": 64,
+        "n_same_tool": 64
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_097",
+    "question": "When Freda cooks canned tomatoes into sauce, they lose half their volume. Each 16 ounce can of tomatoes that she uses contains three tomatoes. Freda\u2019s last batch of tomato sauce made 32 ounces of sauce. How many tomatoes did Freda use?",
+    "first_tool_call": {
+      "name": "calculator",
+      "arguments": {
+        "expression": "32 * 2"
+      }
+    },
+    "n_sentences": 29,
+    "first_commitment_point": null,
+    "baseline_agreement": 0.484375,
+    "final_agreement": 0.3125,
+    "importance_profile": [
+      {
+        "sentence_idx": 0,
+        "sentence_text": "Okay, let's try to figure out how many tomatoes Freda used.",
+        "agreement": 0.734375,
+        "importance": 0.25,
+        "argument_agreement": 0.140625,
+        "entropy": 0.8351164948421137
+      },
+      {
+        "sentence_idx": 1,
+        "sentence_text": "So, the problem says that when she cooks canned tomatoes into sauce, they lose half their volume.",
+        "agreement": 0.71875,
+        "importance": -0.015625,
+        "argument_agreement": 0.328125,
+        "entropy": 0.8571484374283715
+      },
+      {
+        "sentence_idx": 2,
+        "sentence_text": "Each 16-ounce can has three tomatoes.",
+        "agreement": 0.6875,
+        "importance": -0.03125,
+        "argument_agreement": 0.265625,
+        "entropy": 0.8960382325345574
+      },
+      {
+        "sentence_idx": 3,
+        "sentence_text": "Her last batch made 32 ounces of sauce.",
+        "agreement": 0.640625,
+        "importance": -0.046875,
+        "argument_agreement": 0.25,
+        "entropy": 0.9421631690835511
+      },
+      {
+        "sentence_idx": 4,
+        "sentence_text": "We need to find out how many tomatoes she used.",
+        "agreement": 0.609375,
+        "importance": -0.03125,
+        "argument_agreement": 0.296875,
+        "entropy": 0.9652016987500656
+      },
+      {
+        "sentence_idx": 5,
+        "sentence_text": "First, let me understand the volume part.",
+        "agreement": 0.59375,
+        "importance": -0.015625,
+        "argument_agreement": 0.3125,
+        "entropy": 0.9744894033980523
+      },
+      {
+        "sentence_idx": 6,
+        "sentence_text": "If the tomatoes lose half their volume when cooked, that means the sauce's volume is half of the original volume of the tomatoes.",
+        "agreement": 0.5,
+        "importance": -0.09375,
+        "argument_agreement": 0.296875,
+        "entropy": 1.0
+      },
+      {
+        "sentence_idx": 7,
+        "sentence_text": "Wait, so if she starts with a certain volume of tomatoes, after cooking, it becomes half.",
+        "agreement": 0.515625,
+        "importance": 0.015625,
+        "argument_agreement": 0.25,
+        "entropy": 0.9992954443621549
+      },
+      {
+        "sentence_idx": 8,
+        "sentence_text": "So the sauce volume is half the original volume of the tomatoes.",
+        "agreement": 0.421875,
+        "importance": -0.09375,
+        "argument_agreement": 0.265625,
+        "entropy": 0.9823166080205501
+      },
+      {
+        "sentence_idx": 9,
+        "sentence_text": "Therefore, to find the original volume of tomatoes, we need to double the sauce volume.",
+        "agreement": 0.546875,
+        "importance": 0.125,
+        "argument_agreement": 0.171875,
+        "entropy": 0.9936507116910404
+      },
+      {
+        "sentence_idx": 10,
+        "sentence_text": "Let me check that.",
+        "agreement": 0.359375,
+        "importance": -0.1875,
+        "argument_agreement": 0.171875,
+        "entropy": 0.9421631690835511
+      },
+      {
+        "sentence_idx": 11,
+        "sentence_text": "So, if the sauce is 32 ounces, then the original volume of tomatoes before cooking must have been 32 * 2 = 64 ounces.",
+        "agreement": 0.375,
+        "importance": 0.015625,
+        "argument_agreement": 0.140625,
+        "entropy": 0.954434002924965
+      },
+      {
+        "sentence_idx": 12,
+        "sentence_text": "Because when you cook them, they lose half their volume, so the sauce is half.",
+        "agreement": 0.40625,
+        "importance": 0.03125,
+        "argument_agreement": 0.125,
+        "entropy": 0.9744894033980523
+      },
+      {
+        "sentence_idx": 13,
+        "sentence_text": "So original volume is twice the sauce.",
+        "agreement": 0.296875,
+        "importance": -0.109375,
+        "argument_agreement": 0.171875,
+        "entropy": 0.877437311089633
+      },
+      {
+        "sentence_idx": 14,
+        "sentence_text": "That makes sense.",
+        "agreement": 0.40625,
+        "importance": 0.109375,
+        "argument_agreement": 0.15625,
+        "entropy": 0.9744894033980523
+      },
+      {
+        "sentence_idx": 15,
+        "sentence_text": "Now, each can is 16 ounces.",
+        "agreement": 0.515625,
+        "importance": 0.109375,
+        "argument_agreement": 0.21875,
+        "entropy": 0.9992954443621549
+      },
+      {
+        "sentence_idx": 16,
+        "sentence_text": "So how many cans did she use?",
+        "agreement": 0.53125,
+        "importance": 0.015625,
+        "argument_agreement": 0.203125,
+        "entropy": 0.9971803988942642
+      },
+      {
+        "sentence_idx": 17,
+        "sentence_text": "If the total original volume is 64 ounces, then the number of cans is 64 divided by 16. Let me calculate that. 64 / 16 = 4. So she used 4 cans.",
+        "agreement": 0.4375,
+        "importance": -0.09375,
+        "argument_agreement": 0.171875,
+        "entropy": 0.9886994082884974
+      },
+      {
+        "sentence_idx": 18,
+        "sentence_text": "Each can has three tomatoes.",
+        "agreement": 0.578125,
+        "importance": 0.140625,
+        "argument_agreement": 0.28125,
+        "entropy": 0.9823166080205501
+      },
+      {
+        "sentence_idx": 19,
+        "sentence_text": "So total tomatoes would be 4 cans * 3 tomatoes per can = 12 tomatoes.",
+        "agreement": 0.453125,
+        "importance": -0.125,
+        "argument_agreement": 0.203125,
+        "entropy": 0.9936507116910404
+      },
+      {
+        "sentence_idx": 20,
+        "sentence_text": "So the answer should be 12.",
+        "agreement": 0.578125,
+        "importance": 0.125,
+        "argument_agreement": 0.296875,
+        "entropy": 0.9823166080205501
+      },
+      {
+        "sentence_idx": 21,
+        "sentence_text": "Wait, let me double-check.",
+        "agreement": 0.3125,
+        "importance": -0.265625,
+        "argument_agreement": 0.109375,
+        "entropy": 0.8960382325345574
+      },
+      {
+        "sentence_idx": 22,
+        "sentence_text": "Let's go through each step again.",
+        "agreement": 0.21875,
+        "importance": -0.09375,
+        "argument_agreement": 0.109375,
+        "entropy": 0.7578784625383954
+      },
+      {
+        "sentence_idx": 23,
+        "sentence_text": "Sauce volume is 32 oz.",
+        "agreement": 0.109375,
+        "importance": -0.109375,
+        "argument_agreement": 0.046875,
+        "entropy": 0.4980278865344765
+      },
+      {
+        "sentence_idx": 24,
+        "sentence_text": "Since the tomatoes lose half their volume, the original volume of tomatoes is 32 * 2 = 64 oz.",
+        "agreement": 0.078125,
+        "importance": -0.03125,
+        "argument_agreement": 0.03125,
+        "entropy": 0.3955378064564774
+      },
+      {
+        "sentence_idx": 25,
+        "sentence_text": "Each can is 16 oz, so 64 /16 = 4 cans.",
+        "agreement": 0.25,
+        "importance": 0.171875,
+        "argument_agreement": 0.15625,
+        "entropy": 0.8112781244591328
+      },
+      {
+        "sentence_idx": 26,
+        "sentence_text": "Each can has 3 tomatoes, so 4 * 3 = 12. Yep, that seems right.",
+        "agreement": 0.28125,
+        "importance": 0.03125,
+        "argument_agreement": 0.25,
+        "entropy": 0.8571484374283715
+      },
+      {
+        "sentence_idx": 27,
+        "sentence_text": "I think that's it.",
+        "agreement": 0.453125,
+        "importance": 0.171875,
+        "argument_agreement": 0.375,
+        "entropy": 0.9936507116910404
+      },
+      {
+        "sentence_idx": 28,
+        "sentence_text": "So Freda used 12 tomatoes.",
+        "agreement": 0.3125,
+        "importance": -0.140625,
+        "argument_agreement": 0.28125,
+        "entropy": 0.8960382325345574
+      }
+    ],
+    "rollout_summary": [
+      {
+        "sentence_idx": -1,
+        "n_rollouts": 64,
+        "n_tool_calls": 31,
+        "n_same_tool": 31
+      },
+      {
+        "sentence_idx": 0,
+        "n_rollouts": 64,
+        "n_tool_calls": 47,
+        "n_same_tool": 47
+      },
+      {
+        "sentence_idx": 1,
+        "n_rollouts": 64,
+        "n_tool_calls": 46,
+        "n_same_tool": 46
+      },
+      {
+        "sentence_idx": 2,
+        "n_rollouts": 64,
+        "n_tool_calls": 44,
+        "n_same_tool": 44
+      },
+      {
+        "sentence_idx": 3,
+        "n_rollouts": 64,
+        "n_tool_calls": 41,
+        "n_same_tool": 41
+      },
+      {
+        "sentence_idx": 4,
+        "n_rollouts": 64,
+        "n_tool_calls": 39,
+        "n_same_tool": 39
+      },
+      {
+        "sentence_idx": 5,
+        "n_rollouts": 64,
+        "n_tool_calls": 38,
+        "n_same_tool": 38
+      },
+      {
+        "sentence_idx": 6,
+        "n_rollouts": 64,
+        "n_tool_calls": 32,
+        "n_same_tool": 32
+      },
+      {
+        "sentence_idx": 7,
+        "n_rollouts": 64,
+        "n_tool_calls": 33,
+        "n_same_tool": 33
+      },
+      {
+        "sentence_idx": 8,
+        "n_rollouts": 64,
+        "n_tool_calls": 27,
+        "n_same_tool": 27
+      },
+      {
+        "sentence_idx": 9,
+        "n_rollouts": 64,
+        "n_tool_calls": 35,
+        "n_same_tool": 35
+      },
+      {
+        "sentence_idx": 10,
+        "n_rollouts": 64,
+        "n_tool_calls": 23,
+        "n_same_tool": 23
+      },
+      {
+        "sentence_idx": 11,
+        "n_rollouts": 64,
+        "n_tool_calls": 24,
+        "n_same_tool": 24
+      },
+      {
+        "sentence_idx": 12,
+        "n_rollouts": 64,
+        "n_tool_calls": 26,
+        "n_same_tool": 26
+      },
+      {
+        "sentence_idx": 13,
+        "n_rollouts": 64,
+        "n_tool_calls": 19,
+        "n_same_tool": 19
+      },
+      {
+        "sentence_idx": 14,
+        "n_rollouts": 64,
+        "n_tool_calls": 26,
+        "n_same_tool": 26
+      },
+      {
+        "sentence_idx": 15,
+        "n_rollouts": 64,
+        "n_tool_calls": 33,
+        "n_same_tool": 33
+      },
+      {
+        "sentence_idx": 16,
+        "n_rollouts": 64,
+        "n_tool_calls": 34,
+        "n_same_tool": 34
+      },
+      {
+        "sentence_idx": 17,
+        "n_rollouts": 64,
+        "n_tool_calls": 28,
+        "n_same_tool": 28
+      },
+      {
+        "sentence_idx": 18,
+        "n_rollouts": 64,
+        "n_tool_calls": 37,
+        "n_same_tool": 37
+      },
+      {
+        "sentence_idx": 19,
+        "n_rollouts": 64,
+        "n_tool_calls": 29,
+        "n_same_tool": 29
+      },
+      {
+        "sentence_idx": 20,
+        "n_rollouts": 64,
+        "n_tool_calls": 37,
+        "n_same_tool": 37
+      },
+      {
+        "sentence_idx": 21,
+        "n_rollouts": 64,
+        "n_tool_calls": 20,
+        "n_same_tool": 20
+      },
+      {
+        "sentence_idx": 22,
+        "n_rollouts": 64,
+        "n_tool_calls": 14,
+        "n_same_tool": 14
+      },
+      {
+        "sentence_idx": 23,
+        "n_rollouts": 64,
+        "n_tool_calls": 7,
+        "n_same_tool": 7
+      },
+      {
+        "sentence_idx": 24,
+        "n_rollouts": 64,
+        "n_tool_calls": 5,
+        "n_same_tool": 5
+      },
+      {
+        "sentence_idx": 25,
+        "n_rollouts": 64,
+        "n_tool_calls": 16,
+        "n_same_tool": 16
+      },
+      {
+        "sentence_idx": 26,
+        "n_rollouts": 64,
+        "n_tool_calls": 18,
+        "n_same_tool": 18
+      },
+      {
+        "sentence_idx": 27,
+        "n_rollouts": 64,
+        "n_tool_calls": 29,
+        "n_same_tool": 29
+      },
+      {
+        "sentence_idx": 28,
+        "n_rollouts": 64,
+        "n_tool_calls": 20,
+        "n_same_tool": 20
+      }
+    ]
+  }
+]
