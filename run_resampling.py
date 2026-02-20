@@ -52,16 +52,79 @@ def serialize_importance(profile: list[SentenceImportance]) -> list[dict]:
     ]
 
 
+def load_transcripts(
+    task_name: str,
+    max_per_task: int | None = None,
+    seed: int = 42,
+) -> list[dict]:
+    """Load transcripts for resampling, optionally subsampling a balanced set.
+
+    When max_per_task is set, selects half tool-using and half non-tool-using
+    transcripts from the transcript_pairs file. This gives balanced coverage
+    of both behaviors while reducing compute.
+    """
+    if max_per_task is None:
+        # Original behavior: use all tool-using transcripts
+        transcripts_path = Path("action_anchors/outputs") / f"transcripts_{task_name}.json"
+        with open(transcripts_path) as f:
+            return json.load(f)
+
+    import random
+    rng = random.Random(seed)
+
+    pairs_path = Path("action_anchors/outputs") / f"transcript_pairs_{task_name}.json"
+    with open(pairs_path) as f:
+        pairs = json.load(f)
+
+    half = max_per_task // 2
+
+    # Collect tool-using transcripts (already in the right format)
+    tool_transcripts = [p["tool_transcript"] for p in pairs if p["tool_transcript"] is not None]
+    # Collect non-tool transcripts — need to synthesize a dummy first_tool_call
+    # so the agreement metric can measure "did it match the original (no tool)?"
+    no_tool_transcripts = []
+    for p in pairs:
+        nt = p.get("no_tool_transcript")
+        if nt is not None:
+            # For no-tool transcripts, first_tool_call is None — agreement
+            # will measure how often continuations also produce no tool call
+            no_tool_transcripts.append(nt)
+
+    rng.shuffle(tool_transcripts)
+    rng.shuffle(no_tool_transcripts)
+
+    # Deduplicate: don't pick the same example_id from both pools
+    seen_ids: set[str] = set()
+    tool_pick = []
+    for t in tool_transcripts:
+        if t["example_id"] not in seen_ids and len(tool_pick) < half:
+            tool_pick.append(t)
+            seen_ids.add(t["example_id"])
+    no_tool_pick = []
+    for t in no_tool_transcripts:
+        if t["example_id"] not in seen_ids and len(no_tool_pick) < half:
+            no_tool_pick.append(t)
+            seen_ids.add(t["example_id"])
+
+    selected = tool_pick + no_tool_pick
+    rng.shuffle(selected)
+
+    actual_tool = sum(1 for t in selected if t.get("first_tool_call") is not None)
+    actual_no_tool = len(selected) - actual_tool
+    print(f"  Selected {len(selected)} transcripts: {actual_tool} tool-using, {actual_no_tool} non-tool-using")
+
+    return selected
+
+
 def run_experiment(
     resampler: Resampler,
     task_name: str,
     config: dict,
     n_rollouts_override: int | None = None,
+    max_per_task: int | None = None,
 ):
     """Run resampling for all transcripts of a given task."""
-    transcripts_path = Path("action_anchors/outputs") / f"transcripts_{task_name}.json"
-    with open(transcripts_path) as f:
-        transcripts = json.load(f)
+    transcripts = load_transcripts(task_name, max_per_task)
 
     output_path = Path("action_anchors/outputs") / f"resampling_{task_name}.json"
 
@@ -123,6 +186,7 @@ def run_experiment(
                         1
                         for p in rr["parsed"]
                         if p.tool_calls
+                        and transcript["first_tool_call"] is not None
                         and p.tool_calls[0].name == transcript["first_tool_call"]["name"]
                     ),
                 }
@@ -161,6 +225,13 @@ def main():
         default=None,
         help="Override n_rollouts (use small value like 4 for dev)",
     )
+    parser.add_argument(
+        "--max-per-task",
+        type=int,
+        default=None,
+        help="Max transcripts per task (balanced: half tool-using, half non-tool). "
+        "E.g. --max-per-task 20 selects 10 tool + 10 no-tool per task.",
+    )
     args = parser.parse_args()
 
     with open(args.config) as f:
@@ -177,11 +248,11 @@ def main():
 
     if args.task in ("gsm8k", "both"):
         print("=== Resampling GSM8K ===")
-        run_experiment(resampler, "gsm8k", config, args.n_rollouts)
+        run_experiment(resampler, "gsm8k", config, args.n_rollouts, args.max_per_task)
 
     if args.task in ("factual_recall", "both"):
         print("=== Resampling Factual Recall ===")
-        run_experiment(resampler, "factual_recall", config, args.n_rollouts)
+        run_experiment(resampler, "factual_recall", config, args.n_rollouts, args.max_per_task)
 
 
 if __name__ == "__main__":

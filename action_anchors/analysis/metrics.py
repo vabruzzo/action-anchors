@@ -27,15 +27,54 @@ class AgreementMetrics:
 
 
 def compute_agreement(
-    original_tool_call: dict,
+    original_tool_call: dict | None,
     rollout_results: list[GenerationResult],
 ) -> AgreementMetrics:
     """Compare rollout tool calls against the original.
 
     Args:
-        original_tool_call: {"name": str, "arguments": dict}
+        original_tool_call: {"name": str, "arguments": dict} or None if original
+            did not use a tool. When None, agreement measures how often rollouts
+            also produce no tool call.
         rollout_results: List of parsed GenerationResults from resampled continuations
     """
+    # Handle no-tool-use originals: agreement = fraction that also use no tool
+    if original_tool_call is None:
+        no_tool = 0
+        used_tool = 0
+        parse_error = 0
+        tool_choices: list[str] = []
+        for r in rollout_results:
+            if r.parse_error:
+                parse_error += 1
+                tool_choices.append("__parse_error__")
+            elif not r.tool_calls:
+                no_tool += 1
+                tool_choices.append("__no_tool__")
+            else:
+                used_tool += 1
+                tool_choices.append(r.tool_calls[0].name)
+        n_total = len(rollout_results)
+        entropy = 0.0
+        if n_total > 0:
+            counts = Counter(tool_choices)
+            for c in counts.values():
+                p = c / n_total
+                if p > 0:
+                    entropy -= p * math.log2(p)
+        return AgreementMetrics(
+            tool_choice_agreement=no_tool / n_total if n_total > 0 else 0.0,
+            argument_exact_match=no_tool / n_total if n_total > 0 else 0.0,
+            argument_similarity=0.0,
+            n_same_tool_same_args=0,
+            n_same_tool_diff_args=0,
+            n_different_tool=used_tool,
+            n_no_tool=no_tool,
+            n_parse_error=parse_error,
+            n_total=n_total,
+            decision_entropy=entropy,
+        )
+
     original_name = original_tool_call["name"]
     original_args = original_tool_call["arguments"]
 
@@ -45,22 +84,22 @@ def compute_agreement(
     no_tool = 0
     parse_error = 0
 
-    tool_choices: list[str] = []
+    tool_choices2: list[str] = []
     arg_sims: list[float] = []
 
     for r in rollout_results:
         if r.parse_error:
             parse_error += 1
-            tool_choices.append("__parse_error__")
+            tool_choices2.append("__parse_error__")
             continue
 
         if not r.tool_calls:
             no_tool += 1
-            tool_choices.append("__no_tool__")
+            tool_choices2.append("__no_tool__")
             continue
 
         first_tc = r.tool_calls[0]
-        tool_choices.append(first_tc.name)
+        tool_choices2.append(first_tc.name)
 
         if first_tc.name != original_name:
             diff_tool += 1
@@ -77,7 +116,7 @@ def compute_agreement(
     # Entropy of tool choice distribution
     entropy = 0.0
     if n_total > 0:
-        counts = Counter(tool_choices)
+        counts = Counter(tool_choices2)
         for c in counts.values():
             p = c / n_total
             if p > 0:
